@@ -1,9 +1,9 @@
-let cards = ['bicycle', 'bicycle', 'leaf', 'leaf', 'cube', 'cube', 'anchor', 'anchor', 'paper-plane-o', 'paper-plane-o', 'bolt', 'bolt', 'bomb', 'bomb', 'diamond', 'diamond'];
+//declare variables
 let card = document.querySelectorAll(".card");
 const deck = document.querySelector(".deck");
 
 
-
+//add event listener for each card
 for(var i = 0; i< card.length;i++){
   card[i].addEventListener("click", function(){
     this.classList.toggle("open");
@@ -25,3 +25,11 @@ function shuffle(array) {
 
     return array;
 }
+
+//shuffle cards
+function start() {
+  // This shuffle function shuffles the cards
+  let allCards = shuffle(objects);
+}
+
+start();
